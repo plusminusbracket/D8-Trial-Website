@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Team Coaching and Corporate Governance - providing solutions|Delta8 Consultancy</title>
+        <meta name="Delta 8 Consultancy Website. Corporate Governance Training." content="Delta 8 advises companies on corporate governance to manage their operations with confidence, backed by 20 years of expertise."
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+<!--Navigation-->
+<nav class="navbar">
+  <a href="index.html"class="nav-link active">Home</a>
+  <a href="ourstory.html" class="nav-link">Our Story</a>
+  <a href="blog.html" class="nav-link">Blog</a>
+  <a href="contact.html" class="nav-link">Contact</a>
+</nav>
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="inspir.jpg" alt="Noir" style="width:100%">
+  <img class="mySlides" src="highfive.jpg" alt="Duo" style="width:100%">
+  <img class="mySlides" src="inspireq.jpg" alt="Blanc" style="width:100%">
+  <img class="mySlides" src="hillsky.jpg" alt="hill" style="width:100%">
+</section>
+/*Blog Grid on Page*/
+<div class="blog-grid">
+  <!-- Blog Tile 1 -->
+  <article class="blog-tile">
+    <div class="tile-image">
+      <img src="tree.jpg" alt="Tree Cover">
+    </div>
+    <div class="tile-content">
+      <span class="category">Governance</span>
+      <h2 class="tile-title"><a href="#">Boardroom Best Practices</a></h2>
+      <p class="tile-excerpt">Discover how modern frameworks drive real business value...</p>
+      <div class="tile-meta">By Mira Smith • 5 min read</div>
+    </div>
+  </article>
+
+    <script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+</body>
+</html>
